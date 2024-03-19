@@ -1,13 +1,14 @@
 @use 'hero';
+@use 'components/infosbar';
+@use 'event';
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-}
-body{
-    background-color: rgba(65, 105, 225, 0.115);
+    color: #fff;
+    list-style: none;
 }
 
 .container{

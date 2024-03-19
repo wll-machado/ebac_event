@@ -1,0 +1,20 @@
+.event{
+    .container{
+        display: flex;
+    }
+
+    &__img{
+        max-width: 360px;
+    }
+
+    &__detail{
+        &__title{
+            font-size:18px ;
+            font-weight: bold;
+        }
+
+        &__description{
+            line-height: 22px;
+        }
+    }
+}
