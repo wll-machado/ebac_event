@@ -1,6 +1,7 @@
 @use 'hero';
 @use 'components/infosbar';
 @use 'event';
+@use 'variables';
 
 *{
     margin: 0;
@@ -9,8 +10,12 @@
     font-family: 'Roboto', sans-serif;
     color: #fff;
     list-style: none;
+    
 }
 
+body{
+    background-color: royalblue;
+}
 .container{
     max-width: 960px;
     width: 100%;

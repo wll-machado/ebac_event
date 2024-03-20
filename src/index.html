@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Evento tech</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
 </head>
@@ -34,8 +35,8 @@
         </div>
     </header>
 
-    <section class="event">
-        <div class="container">
+    <section class="event event--frontend" >
+        <div class="container" data-aos="fade-right">
             <div class="event__details">
                 <h2 class="event__details__title" >Front-end</h2>
                 <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, excepturi? Voluptatem reprehenderit dolor, ipsa blanditiis nam veniam fugit voluptates itaque, molestias in quod ipsum fugiat consectetur recusandae non nisi. Ducimus.</p>
@@ -45,6 +46,45 @@
         </div>
     </section>
 
+    <section class="event event--ux-ui">
+        <div class="container" data-aos="fade-left">
+            <img class="event__img" src="images/ui-ux.png" alt="ux logo">
+
+            <div class="event__details">
+                <h2 class="event__details__title" >UX UI</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, excepturi? Voluptatem reprehenderit dolor, ipsa blanditiis nam veniam fugit voluptates itaque, molestias in quod ipsum fugiat consectetur recusandae non nisi. Ducimus.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title" >Data Science</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, excepturi? Voluptatem reprehenderit dolor, ipsa blanditiis nam veniam fugit voluptates itaque, molestias in quod ipsum fugiat consectetur recusandae non nisi. Ducimus.</p>
+            </div>
+            
+            <img class="event__img" src="images/data.png" alt="data logo">
+        </div>
+    </section>
+
+    <section class="event event--backend">
+        <div class="container" data-aos="fade-left">
+            <img class="event__img" src="images/backend.png" alt="backlogo">
+
+            <div class="event__details">
+                <h2 class="event__details__title" >Back-end</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, excepturi? Voluptatem reprehenderit dolor, ipsa blanditiis nam veniam fugit voluptates itaque, molestias in quod ipsum fugiat consectetur recusandae non nisi. Ducimus.</p>
+            </div>
+            
+        </div>
+    </section>
+
     <script src="scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
