@@ -1,5 +1,5 @@
 
-const dataDoEvento = new Date("dec 12, 2024 19:00:00");
+const dataDoEvento = new Date("jun 17, 2024 07:30:00");
 const timeStamp = dataDoEvento.getTime();
 
 const contaHoras = setInterval(() => {
@@ -20,10 +20,16 @@ const contaHoras = setInterval(() => {
 
     const segundosAteOEvento = Math.floor((distanciaDoEvento % minutosEmMs) / 1000);
     
-    document.getElementById('contador').innerHTML = `Dias ate o evento: ${diasAteOEvento}d : ${horasAteOEvento}h: ${minutosAteOEvento}m: ${segundosAteOEvento}s`;
+    document.getElementById('contador').innerHTML = ` ${diasAteOEvento}d : ${horasAteOEvento}h: ${minutosAteOEvento}m: ${segundosAteOEvento}s`;
 
     if (distanciaDoEvento < 0){
         clearInterval(contaHoras);
         document.getElementById('contador').innerHTML = "Evento Expirado";
     }
-},1000)
+},1000);
+
+const button = document.querySelector('.button');
+
+button.addEventListener('click',()=>{
+    alert('Presença Confirmada!! Vejo você lá!!');
+});

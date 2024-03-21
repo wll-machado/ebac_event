@@ -4,19 +4,31 @@
     padding: 80px 0;
 
     &--frontend{
-        background-image: linear-gradient(variables.$blue1,variables.$blue2);
+        background: linear-gradient(rgba(152, 17, 241, 0.5), rgba(72, 1, 105, 0.5)),
+    url(../images/dance.jpg);
+    background-size: cover;
+        background-repeat: no-repeat;
     }
 
     &--ux-ui{
-        background-image: linear-gradient(variables.$blue2,variables.$blue1);
+        background: linear-gradient(rgba(152, 17, 241, 0.5), rgba(72, 1, 105, 0.5)),
+    url(../images/dj.webp);
+    background-size: cover;
+        background-repeat: no-repeat;
     }
 
     &--data-science{
-        background-image: linear-gradient(variables.$pink1,variables.$yellow1);
+        background: linear-gradient(rgba(152, 17, 241, 0.5), rgba(72, 1, 105, 0.5)),
+    url(../images/part2.jpg);
+    background-size: cover;
+        background-repeat: no-repeat;
     }
 
     &--backend{
-        background-image: linear-gradient(variables.$yellow1,variables.$pink1);
+        background: linear-gradient(rgba(152, 17, 241, 0.5), rgba(72, 1, 105, 0.5)),
+    url(../images/fantasy.webp);
+    background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .container {
@@ -26,6 +38,7 @@
 
     &__img {
         max-width: 360px;
+        height: 360px;
 
         &:nth-child(odd){
             margin-right: 40px;
@@ -37,6 +50,7 @@
         margin-right: 40px;
 
         &__title {
+            
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 16px;

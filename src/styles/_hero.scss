@@ -1,16 +1,42 @@
-.hero{
+.hero {
     padding: 64px 0 100px 0;
-    background-image: url(../images/fundo.png);
+    background-image: url(../images/party1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 
-    .container{
+    #contador {
+        margin-top: 10px;
+        font-size: 50px;
+    }
+    .container {
         position: relative;
+
+        .button {
+            background-color: purple;
+            display: block;
+            width: 18%;
+            border-radius: 15px;
+            padding: 10px;
+            text-align: center;
+            margin-top: 100px;
+            border: none;
+            cursor: pointer;
+        }
+
+        hr {
+            width: 45%;
+            border: 1px solid purple;
+            margin: 10px 0;
+        }
+
+        .hero__detail {
+            margin-bottom: 20px;
+        }
     }
 
-    &::before{
-        opacity: .7;
+    &::before {
+        opacity: .6;
         content: '';
         position: absolute;
         top: 0;
@@ -20,27 +46,59 @@
         background-color: black;
     }
 
-    &__text{
-        margin: 64px 0;
-        text-align: center;
+    &__text {
+        color: rgb(177, 52, 250);
+        margin: 5px 0;
+        text-align: left;
         font-size: 40px;
         line-height: 56px;
         font-weight: 800;
     }
 
-    &__logo{
-        margin: 0 auto;
-        height: 80px;
-        display: block;
+    &__subtext {
+        color: rgb(177, 52, 250);
+        font-weight: lighter;
+        font-size: 52px;
+        line-height: 56px;
     }
 
-    @media (max-width:640px){
-        &__logo{
-            height: 40px;
+    &__logo {
+        position: absolute;
+        top: -60px;
+        left: -150px;
+        height: 80px;
+        display: block;
+        border-radius: 40px;
+    }
+
+    @media (max-width:640px) {
+        #contador {
+            
+            font-size: 40px;
         }
 
-        &__text{
-            font-size: 22px;
+        .container {
+            hr {
+                width: 75%;
+            }
+
+            .button {
+                width: 95%;
+                padding: 20px 10px;
+            }
+        }
+
+        &__logo {
+            position: relative;
+            top: 0;
+            left: 0;
+            margin: 0 auto;
+            height: 80px;
+            border-radius: 40px;
+        }
+
+        &__text {
+            font-size: 32px;
             line-height: 24px;
             margin: 24px 0;
         }
